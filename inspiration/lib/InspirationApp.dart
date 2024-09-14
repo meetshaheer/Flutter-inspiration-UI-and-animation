@@ -63,12 +63,53 @@ class InspirationApp extends StatelessWidget {
                 ),
                 const SizedBox(
                   height: 5,
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Promo Today",
+                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  height: 200,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      promoCard(''),
+                    ],
+                  ),
                 )
               ],
             ),
-          )
+          ),
         ],
       )),
     );
   }
+}
+
+Widget promoCard(image) {
+  return AspectRatio(
+    aspectRatio: 2 / 3,
+    child: Container(
+      decoration: BoxDecoration(
+        color: Colors.orange,
+        borderRadius: BorderRadius.circular(20),
+        image: DecorationImage(image: AssetImage('assets/images/one.png')
+        )
+      ),
+    ),
+  );
 }
