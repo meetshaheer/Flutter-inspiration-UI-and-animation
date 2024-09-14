@@ -31,4 +31,4 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-flutter-ui-project.git
+   git clone https://github.com/meetshaheer/Flutter-inspiration-UI-and-animation/
