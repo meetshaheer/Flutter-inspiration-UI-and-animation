@@ -61,7 +61,7 @@ class InspirationApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 )
               ],
