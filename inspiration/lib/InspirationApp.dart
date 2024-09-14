@@ -8,7 +8,7 @@ class InspirationApp extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(244, 243, 243, 1),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
       ),
     );
   }
