@@ -26,18 +26,44 @@ class InspirationApp extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.all(20.0),
             decoration: const BoxDecoration(
-              color: Colors.white,
-            ),
-            child: const Column(
+                color: Colors.white, borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Find Your",
-                  style: TextStyle(color: Colors.black87, fontSize: 25),
+                const Text(
+                  "Uncover Your",
+                  style: TextStyle(color: Colors.black87, fontSize: 25, fontWeight: FontWeight.w300),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                const Text(
+                  "Imagination",
+                  style: TextStyle(color: Colors.black, fontSize: 48, fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(22), color: const Color.fromRGBO(245, 243, 243, 1)),
+                  padding: const EdgeInsets.all(6),
+                  child: const TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Search for what you need.",
+                      hintStyle: TextStyle(
+                          color: Color.fromARGB(255, 185, 185, 185), fontSize: 20, fontWeight: FontWeight.w300),
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Colors.black87,
+                      ),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 5,
-                ),
+                )
               ],
             ),
           )
