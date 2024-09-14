@@ -18,6 +18,31 @@ class InspirationApp extends StatelessWidget {
           ),
         ),
       ),
+      body: SafeArea(
+          child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20.0),
+            decoration: const BoxDecoration(
+              color: Colors.white,
+            ),
+            child: const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Find Your",
+                  style: TextStyle(color: Colors.black87, fontSize: 25),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+              ],
+            ),
+          )
+        ],
+      )),
     );
   }
 }
