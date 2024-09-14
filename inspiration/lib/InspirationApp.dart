@@ -89,12 +89,12 @@ class InspirationApp extends StatelessWidget {
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          promoCard('assets/images/one.jpg', "Hill View"),
-                          promoCard('assets/images/two.jpg', "Church View"),
-                          promoCard('assets/images/three.jpg', "Amusement"),
-                          promoCard('assets/images/four.jpg', "CN Tower"),
-                          promoCard('assets/images/five.png', "Bulb View"),
-                          promoCard('assets/images/siz.png', "Old Church"),
+                          promoCard('assets/images/one.jpg', "Hill View", 2.2, 3),
+                          promoCard('assets/images/two.jpg', "Church View", 2.2, 3),
+                          promoCard('assets/images/three.jpg', "Amusement", 2.2, 3),
+                          promoCard('assets/images/four.jpg', "CN Tower", 2.2, 3),
+                          promoCard('assets/images/five.png', "Bulb View", 2.2, 3),
+                          promoCard('assets/images/siz.png', "Old Church", 2.2, 3),
                         ],
                       ),
                     ),
